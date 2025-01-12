@@ -29,17 +29,22 @@ class WomanProductsPage extends StatelessWidget {
         ],
       ),
       floatingActionButton: Container(
-          height: squareSize * 0.15,
-          width: squareSize * 0.15,
-          decoration: BoxDecoration(
-            color: Colors.black,
-            borderRadius: BorderRadius.circular(50),
-          ),
-          child: Icon(
-            Icons.filter_alt,
-            color: Colors.white,
-            size: squareSize * 0.075,
-          )),
+        height: squareSize * 0.15,
+        width: squareSize * 0.15,
+        decoration: BoxDecoration(
+          color: Colors.black,
+          borderRadius: BorderRadius.circular(50),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(13),
+          child: Image.asset("assets/images/icons/t-shirt.png", width: 18),
+        ),
+        // Icon(
+        //   Icons.filter_alt,
+        //   color: Colors.white,
+        //   size: squareSize * 0.075,
+        // ),
+      ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
